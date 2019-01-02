@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Componentes/Header';
 import Footer from './Componentes/Footer';
 import Home from './Componentes/Home';
+import Chatbot from './Componentes/Chatbot';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Home />
+        <Chatbot />
         <Footer />
       </div>
     );
