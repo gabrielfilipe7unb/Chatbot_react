@@ -1,0 +1,29 @@
+.chat-conteudo {
+
+    display: grid;
+    grid-template-rows: 40px auto 60px;
+    height: calc(100vh - 390px);
+
+}
+
+.chat-header{
+
+    background-color: red;
+
+}
+
+.chat-conversa{
+
+    background-color: green;
+    position: relative;
+    height: 20%;
+
+}
+
+.chat-mensagem{
+
+    background-color: blue;
+    botton: 0;
+    position: relative;
+    
+}

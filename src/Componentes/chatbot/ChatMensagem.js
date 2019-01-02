@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChatMensagem = porps => {
     return (
-        <div>
+        <div className='chat-mensagem'>
             Digite aqui sua mensagem
         </div>
     )

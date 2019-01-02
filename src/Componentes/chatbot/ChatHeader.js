@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChatHeader = porps => {
     return (
-        <div>
+        <div className='chat-header'>
             Chatbot
         </div>
     )
