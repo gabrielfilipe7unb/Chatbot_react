@@ -19,3 +19,9 @@ code {
   color: aliceblue;
   padding: 60px;
 }
+
+.home {
+  flex: 70;
+  background-color: aqua;
+  padding: 20px;
+}
