@@ -25,3 +25,9 @@ code {
   background-color: aqua;
   padding: 20px;
 }
+
+.chatbot {
+  flex: 30%;
+  background-color: cadetblue;
+  padding: 20px;
+}
