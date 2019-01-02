@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
 
 class Home extends Component {
     render(){
         return (
             <div className='home'>
-                <Button color="danger">Danger!</Button>
+                <p className="App-intro">
+                    Projeto chatbot em React.js
+                    <p>
+                        com o IBM Watson
+                    </p>
+                </p>
             </div>
         )
     }

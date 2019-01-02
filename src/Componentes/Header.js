@@ -5,6 +5,9 @@ const Header = props => {
     return (
         <header className="header">
             <img src={logo} className="App-logo" alt="logo" />
+            <h1 className="App-title">
+                Chatbot
+            </h1>
         </header>
 
     )
