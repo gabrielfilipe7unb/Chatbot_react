@@ -1,9 +1,14 @@
 import React from 'react'
+import {Alert, Badge} from 'reactstrap';
 
 const ChatHeader = porps => {
     return (
         <div className='chat-header'>
-            Chatbot
+            <Alert color='dark'>
+                <h2>
+                    Chatbot
+                </h2>
+            </Alert>
         </div>
     )
 }
