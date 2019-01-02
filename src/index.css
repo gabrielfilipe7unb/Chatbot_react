@@ -31,3 +31,9 @@ code {
   background-color: cadetblue;
   padding: 20px;
 }
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: red;
+}
