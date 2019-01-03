@@ -1,6 +1,7 @@
+
 export const enviaMensagem = (mensagem) => {
     return {
-        type: 'envia_mensagem',
-        payload: {mensagem}
+        type: 'ENVIA_MENSAGEM',
+        payload: { mensagem }
     }
 }
