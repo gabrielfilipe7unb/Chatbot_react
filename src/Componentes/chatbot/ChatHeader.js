@@ -1,5 +1,5 @@
 import React from 'react'
-import {Alert, Badge} from 'reactstrap';
+import {Alert} from 'reactstrap';
 
 const ChatHeader = porps => {
     return (

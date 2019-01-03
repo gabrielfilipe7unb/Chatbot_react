@@ -1,25 +1,47 @@
-import React from 'react'
-import {InputGroup, Input, InputGroupAddon, Button} from 'reactstrap';
+import React, { Component } from 'react'
+import { InputGroup, InputGroupAddon, Input, Button } from 'reactstrap'
+import {connect} from 'react-redux'
 
-const ChatMensagem = porps => {
-    return (
-        <div className='chat-mensagem'>
-        <hr />
+import {enviaMensagem} from './../../store/actions/chat'
 
-        <InputGroup>
+class ChatMensagem extends Component {
+    constructor(props) {
+        super(props)
 
-            <Input placeholder='Digite aqui sua mensagem' />
+        this.inputEnviaTexto = this.inputEnviaTexto.bind(this)
+    }
 
-            <InputGroupAddon addonType='append'>
+    inputEnviaTexto(e){
+        if (e.keyCode === 13) {
+            console.log(e.target.value)
+            const mensagem = {
+                texto: e.target.value,
+                origem: 'user'
+            }
+            this.props.enviaTexto(mensagem)
+            e.target.value = ''
+        }
+    }
 
-                <Button color='success'>Enviar</Button>
-
-            </InputGroupAddon>
-
-        </InputGroup>
-        
-        </div>
-    )
+    render() {
+        return (
+            <div className='chat-mensagem'>
+                <hr />
+                <InputGroup>
+                    <Input onKeyDown={this.inputEnviaTexto} placeholder='Digite sua mensagem' />
+                    <InputGroupAddon addonType='append'>
+                        <Button color='success'>enviar</Button>
+                    </InputGroupAddon>
+                </InputGroup>
+            </div>
+        )
+    }
 }
 
-export default ChatMensagem;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        enviaTexto: (msg) => dispatch(enviaMensagem(msg))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(ChatMensagem)

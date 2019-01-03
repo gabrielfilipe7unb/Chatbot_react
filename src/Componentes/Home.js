@@ -5,11 +5,10 @@ class Home extends Component {
         return (
             <div className='home'>
                 <p className="App-intro">
-                    Projeto chatbot em React.js
+                    Projeto chatbot em React.js</p>
                     <p>
                         com o IBM Watson
                     </p>
-                </p>
             </div>
         )
     }
